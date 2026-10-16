@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resgate — Quadrilha</title>
+<title>Aether Membear â€” Resgate</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -33,7 +33,6 @@
   }
   #bg { position: fixed; inset: 0; z-index: 0; display: block; }
 
-  /* vinheta */
   #vignette {
     position: fixed; inset: 0; z-index: 1; pointer-events: none;
     background: radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(0,0,0,0.55) 100%);
@@ -115,7 +114,6 @@
   }
   .sub { color: var(--muted); font-size: 14.5px; line-height: 1.55; margin-bottom: 28px; }
 
-  /* ── qty grid ── */
   .qty-grid {
     display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
   }
@@ -156,7 +154,6 @@
     box-shadow: 0 0 0 1px var(--purple) inset, 0 0 40px rgba(168,85,247,0.45);
   }
 
-  /* ── input ── */
   .field { margin-bottom: 22px; }
   .field label {
     display: block; font-size: 12px; font-weight: 600;
@@ -184,7 +181,6 @@
   }
   .input-wrap input::placeholder { color: #4a4660; }
 
-  /* ── preview do server ── */
   .guild-preview {
     display: flex; align-items: center; gap: 14px;
     padding: 14px; border-radius: 16px;
@@ -214,7 +210,6 @@
   }
   .guild-preview .gmeta { font-size: 12px; color: var(--muted); margin-top: 2px; }
 
-  /* ── botões ── */
   .btn {
     appearance: none; border: 0; cursor: pointer;
     font-family: inherit; font-weight: 600; font-size: 15px;
@@ -255,7 +250,6 @@
   }
   .hint.warn { color: #f0abfc; }
 
-  /* ── loading / status ── */
   .status-wrap {
     display: flex; flex-direction: column; align-items: center;
     text-align: center; gap: 20px;
@@ -264,7 +258,6 @@
   .status-title { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
   .status-sub { font-size: 14px; color: var(--muted); line-height: 1.55; max-width: 340px; }
 
-  /* check */
   .check .circle {
     stroke-dasharray: 290; stroke-dashoffset: 290;
     animation: drawCircle .7s cubic-bezier(.4,0,.2,1) forwards;
@@ -276,7 +269,6 @@
   @keyframes drawCircle { to { stroke-dashoffset: 0; } }
   @keyframes drawTick { to { stroke-dashoffset: 0; } }
 
-  /* x */
   .xmark .xcircle {
     stroke-dasharray: 290; stroke-dashoffset: 290;
     animation: drawCircle .6s cubic-bezier(.4,0,.2,1) forwards;
@@ -297,7 +289,6 @@
     40%, 60% { transform: translateX(7px); }
   }
 
-  /* loading bar */
   .loadbar {
     width: 100%; height: 6px; border-radius: 999px;
     background: rgba(168,85,247,0.12); overflow: hidden;
@@ -311,15 +302,6 @@
     transition: width .2s linear;
   }
 
-  .spin {
-    width: 18px; height: 18px; border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.25);
-    border-top-color: #fff;
-    animation: spin .7s linear infinite;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  /* tooltip p/ link do bot */
   .bot-row {
     display: flex; align-items: center; gap: 12px;
     padding: 14px; border-radius: 14px;
@@ -359,18 +341,18 @@
 
 <div class="stage">
 
-  <!-- ═══ TELA 1 — ESCOLHER QUANTIDADE ═══ -->
+  <!-- TELA 1 â€” QUANTIDADE -->
   <div class="screen active" id="s-qty">
     <div class="card">
       <div class="brand">
         <div class="dot">
           <svg viewBox="0 0 127.14 96.36"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>
         </div>
-        <div class="name">resgate por <b>quadrilha</b></div>
+        <div class="name">resgate por <b>Aether Membear</b></div>
       </div>
 
-      <h1>Quantos membros<br>você quer <span class="accent">resgatar</span>?</h1>
-      <p class="sub">escolha a quantidade. o processo é automático.</p>
+      <h1>Quantos membros<br>vocÃª quer <span class="accent">resgatar</span>?</h1>
+      <p class="sub">escolha a quantidade. o processo Ã© automÃ¡tico.</p>
 
       <div class="qty-grid">
         <button class="qty-btn" data-qty="100"><span class="n">100</span><span class="l">membros</span></button>
@@ -381,22 +363,22 @@
     </div>
   </div>
 
-  <!-- ═══ TELA 2 — ID DO SERVIDOR ═══ -->
+  <!-- TELA 2 â€” ID DO SERVIDOR -->
   <div class="screen" id="s-guild">
     <div class="card">
       <div class="brand">
         <div class="dot">
           <svg viewBox="0 0 127.14 96.36"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>
         </div>
-        <div class="name">resgate por <b>quadrilha</b></div>
+        <div class="name">resgate por <b>Aether Membear</b></div>
       </div>
 
       <h1>ID do seu <span class="accent">servidor</span></h1>
-      <p class="sub">cola o id do servidor pra eu buscar as informações.</p>
+      <p class="sub">cola o id do servidor pra eu buscar as informaÃ§Ãµes.</p>
 
       <div class="field">
         <label>ID do servidor</label>
-        <div class="input-wrap">
+        <div class="input-wrap" id="guildInputWrap">
           <span class="hash">#</span>
           <input id="guildInput" type="text" inputmode="numeric" placeholder="000000000000000000" autocomplete="off" spellcheck="false">
         </div>
@@ -405,8 +387,8 @@
       <div class="guild-preview" id="guildPreview">
         <div class="gicon" id="gIcon">?</div>
         <div class="ginfo">
-          <div class="gname" id="gName">—</div>
-          <div class="gmeta" id="gMeta">—</div>
+          <div class="gname" id="gName">â€”</div>
+          <div class="gmeta" id="gMeta">â€”</div>
         </div>
       </div>
 
@@ -420,7 +402,7 @@
     </div>
   </div>
 
-  <!-- ═══ TELA 3 — ADICIONAR BOT ═══ -->
+  <!-- TELA 3 â€” ADICIONAR BOT -->
   <div class="screen" id="s-bot">
     <div class="card">
       <div class="brand">
@@ -438,26 +420,26 @@
           <svg viewBox="0 0 127.14 96.36"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>
         </div>
         <div class="binfo">
-          <div class="bname">quadrilha bot</div>
-          <div class="bmeta">precisa de permissão de administrador</div>
+          <div class="bname">Aether Membear</div>
+          <div class="bmeta">precisa de permissÃ£o de administrador</div>
         </div>
       </div>
 
       <a class="link-btn" id="botLink" target="_blank" rel="noopener"
-         href="https://discord.com/oauth2/authorize?client_id=1559276860058247269&permissions=8&integration_type=0&scope=applications.commands+bot">
+         href="https://discord.com/oauth2/authorize?client_id=1560479882738401401&permissions=8&integration_type=0&scope=applications.commands+bot">
         <svg viewBox="0 0 127.14 96.36"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>
-        adicionar bot ao servidor
+        adicionar Aether Membear
       </a>
 
       <button class="btn btn-primary" id="botConfirm" disabled>
-        <span id="botConfirmLabel">já adicionei o bot</span>
+        <span id="botConfirmLabel">jÃ¡ adicionei o bot</span>
       </button>
 
-      <p class="hint" id="botHint">abre o link acima e volta aqui pra liberar o botão.</p>
+      <p class="hint" id="botHint">abre o link acima e volta aqui pra liberar o botÃ£o.</p>
     </div>
   </div>
 
-  <!-- ═══ TELA 4 — CARREGANDO ═══ -->
+  <!-- TELA 4 â€” CARREGANDO -->
   <div class="screen" id="s-loading">
     <div class="card">
       <div class="status-wrap">
@@ -466,8 +448,8 @@
           <path class="tick" d="M30 52 L44 66 L72 36" fill="none" stroke="#22c55e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div>
-          <div class="status-title">Resgatando membros…</div>
-          <div class="status-sub" id="loadSub">conectando ao servidor <b id="loadGuildName">…</b></div>
+          <div class="status-title">Resgatando membrosâ€¦</div>
+          <div class="status-sub" id="loadSub">conectando ao servidor <b id="loadGuildName">â€¦</b></div>
         </div>
         <div class="loadbar"><div class="fill" id="loadFill"></div></div>
         <div class="status-sub" id="loadCount" style="font-variant-numeric: tabular-nums;">0 / 0</div>
@@ -475,7 +457,7 @@
     </div>
   </div>
 
-  <!-- ═══ TELA 5 — FALHOU ═══ -->
+  <!-- TELA 5 â€” FALHOU -->
   <div class="screen" id="s-failed">
     <div class="card">
       <div class="status-wrap">
@@ -486,13 +468,13 @@
         </svg>
         <div>
           <div class="status-title">Falha no resgate</div>
-          <div class="status-sub">o bot <b>não foi encontrado</b> no servidor <b id="failGuildName">—</b>. adicione o bot e tente novamente.</div>
+          <div class="status-sub">o bot <b>nÃ£o foi encontrado</b> no servidor <b id="failGuildName">â€”</b>. adicione o bot e tente novamente.</div>
         </div>
         <button class="btn btn-primary" id="retryBtn" style="margin-top:6px;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
           adicionar bot novamente
         </button>
-        <p class="hint warn">tentativa <b id="failCount">1</b> · verifique se o bot está no servidor</p>
+        <p class="hint warn">tentativa <b id="failCount">1</b> Â· verifique se o bot estÃ¡ no servidor</p>
       </div>
     </div>
   </div>
@@ -500,9 +482,9 @@
 </div>
 
 <script>
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 //   ESTADO
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 const state = {
   qty: null,
   guildId: null,
@@ -511,9 +493,9 @@ const state = {
   attempts: 0,
 };
 
-// ═══════════════════════════════════════════
-//   CANVAS — fundo animado
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//   CANVAS â€” fundo animado
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 const canvas = document.getElementById('bg');
 const ctx = canvas.getContext('2d', { alpha: true });
 let W = 0, H = 0, DPR = 1;
@@ -531,7 +513,6 @@ function resize() {
 window.addEventListener('resize', resize);
 resize();
 
-// discord logo como imagem
 const discordSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"><path fill="#a855f7" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>`;
 const discordImg = new Image();
 discordImg.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(discordSVG);
@@ -587,12 +568,9 @@ function initParticles() {
 initParticles();
 window.addEventListener('resize', () => { resize(); initParticles(); });
 
-let t = 0;
 function loop() {
-  t += 1;
   ctx.clearRect(0, 0, W, H);
 
-  // ── bolhas
   for (let i = 0; i < bubbles.length; i++) {
     const b = bubbles[i];
     b.wob += b.wobSpeed;
@@ -616,7 +594,6 @@ function loop() {
     if (b.y < -b.r * 3) bubbles[i] = spawnBubble();
   }
 
-  // ── discords caindo
   if (discordImg.complete) {
     for (let i = 0; i < icons.length; i++) {
       const ic = icons[i];
@@ -628,7 +605,6 @@ function loop() {
       ctx.globalAlpha = ic.a;
       ctx.translate(ic.x, ic.y);
       ctx.rotate(ic.rot);
-      // glow
       ctx.shadowColor = 'rgba(168,85,247,0.8)';
       ctx.shadowBlur = 12;
       ctx.drawImage(discordImg, -ic.s / 2, -ic.s / 2 * 0.76, ic.s, ic.s * 0.76);
@@ -642,9 +618,9 @@ function loop() {
 }
 loop();
 
-// ═══════════════════════════════════════════
-//   NAVEGAÇÃO
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//   NAVEGAÃ‡ÃƒO
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 const screens = {
   qty: document.getElementById('s-qty'),
   guild: document.getElementById('s-guild'),
@@ -658,9 +634,9 @@ function show(name) {
   screens[name].classList.add('active');
 }
 
-// ═══════════════════════════════════════════
-//   TELA 1 — QUANTIDADE
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//   TELA 1 â€” QUANTIDADE
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 document.querySelectorAll('.qty-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.qty-btn').forEach(b => b.classList.remove('picked'));
@@ -670,10 +646,11 @@ document.querySelectorAll('.qty-btn').forEach(btn => {
   });
 });
 
-// ═══════════════════════════════════════════
-//   TELA 2 — ID DO SERVIDOR
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//   TELA 2 â€” ID DO SERVIDOR
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 const guildInput = document.getElementById('guildInput');
+const guildInputWrap = document.getElementById('guildInputWrap');
 const guildConfirm = document.getElementById('guildConfirm');
 const guildPreview = document.getElementById('guildPreview');
 const gIcon = document.getElementById('gIcon');
@@ -686,7 +663,6 @@ let fetchTimer = null;
 backQty.addEventListener('click', () => show('qty'));
 
 guildInput.addEventListener('input', () => {
-  // deixa só dígitos
   guildInput.value = guildInput.value.replace(/\D/g, '').slice(0, 20);
   state.guild = null;
   guildConfirm.disabled = true;
@@ -699,52 +675,8 @@ guildInput.addEventListener('input', () => {
   }
 });
 
-async function loadGuild(id) {
-  gIcon.textContent = '?';
-  gIcon.style.background = 'linear-gradient(135deg, #6d28d9, #4c1d95)';
-  gName.textContent = 'buscando…';
-  gMeta.textContent = 'aguarde';
+function showSuccess(data) {
   guildPreview.classList.add('show');
-
-  let data = null;
-
-  // 1) tenta preview (traz nome, ícone, contagem)
-  try {
-    const r = await fetch(`https://discord.com/api/v10/guilds/${id}/preview`);
-    if (r.ok) {
-      const d = await r.json();
-      data = {
-        name: d.name,
-        icon: d.icon ? `https://cdn.discordapp.com/icons/${id}/${d.icon}.png?size=256` : null,
-        members: d.approximate_member_count,
-        online: d.approximate_presence_count,
-      };
-    }
-  } catch (e) { /* CORS ou 404 */ }
-
-  // 2) fallback widget
-  if (!data) {
-    try {
-      const r = await fetch(`https://discord.com/api/v10/guilds/${id}/widget.json`);
-      if (r.ok) {
-        const d = await r.json();
-        data = {
-          name: d.name,
-          icon: null,
-          members: null,
-          online: d.presence_count,
-        };
-      }
-    } catch (e) { /* nada */ }
-  }
-
-  // 3) fallback silencioso
-  if (!data) {
-    data = { name: `servidor ${id}`, icon: null, members: null, online: null, unknown: true };
-  }
-
-  state.guild = { id, ...data };
-  state.guildId = id;
 
   if (data.icon) {
     gIcon.innerHTML = `<img src="${data.icon}" alt="">`;
@@ -757,24 +689,105 @@ async function loadGuild(id) {
   const parts = [];
   if (data.members != null) parts.push(`${data.members.toLocaleString('pt-BR')} membros`);
   if (data.online != null) parts.push(`${data.online.toLocaleString('pt-BR')} online`);
-  if (!parts.length) parts.push('informações indisponíveis');
-  gMeta.textContent = parts.join(' · ');
+  if (!parts.length) parts.push('informaÃ§Ãµes indisponÃ­veis');
+  gMeta.textContent = parts.join(' Â· ');
 
+  state.guild = data;
+  state.guildId = data.id;
   guildConfirm.disabled = false;
+}
+
+async function fetchGuild(id) {
+  // 1) discordlookup
+  try {
+    const r = await fetch(`https://discordlookup.mesalytic.moe/v1/guild/${id}`);
+    if (r.ok) {
+      const d = await r.json();
+      if (d && d.id) {
+        let icon = null;
+        if (d.icon && d.icon.hash) {
+          const ext = d.icon.is_animated ? 'gif' : 'png';
+          icon = `https://cdn.discordapp.com/icons/${id}/${d.icon.hash}.${ext}?size=256`;
+        } else if (typeof d.icon === 'string' && d.icon) {
+          icon = d.icon.startsWith('http') ? d.icon : `https://cdn.discordapp.com/icons/${id}/${d.icon}.png?size=256`;
+        }
+        return {
+          id: d.id,
+          name: d.name || `servidor ${id}`,
+          icon,
+          members: d.approximate_member_count ?? null,
+          online: d.approximate_presence_count ?? null,
+        };
+      }
+    }
+  } catch (e) { /* segue */ }
+
+  // 2) corsproxy
+  try {
+    const r = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(`https://discord.com/api/v10/guilds/${id}?with_counts=true`)}`);
+    if (r.ok) {
+      const d = await r.json();
+      if (d && d.id) {
+        return {
+          id: d.id,
+          name: d.name || `servidor ${id}`,
+          icon: d.icon ? `https://cdn.discordapp.com/icons/${id}/${d.icon}.png?size=256` : null,
+          members: d.approximate_member_count ?? null,
+          online: d.approximate_presence_count ?? null,
+        };
+      }
+    }
+  } catch (e) { /* segue */ }
+
+  // 3) allorigins
+  try {
+    const r = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(`https://discord.com/api/v10/guilds/${id}?with_counts=true`)}`);
+    if (r.ok) {
+      const d = await r.json();
+      if (d && d.id) {
+        return {
+          id: d.id,
+          name: d.name || `servidor ${id}`,
+          icon: d.icon ? `https://cdn.discordapp.com/icons/${id}/${d.icon}.png?size=256` : null,
+          members: d.approximate_member_count ?? null,
+          online: d.approximate_presence_count ?? null,
+        };
+      }
+    }
+  } catch (e) { /* segue */ }
+
+  // fallback
+  return {
+    id,
+    name: `servidor ${id}`,
+    icon: null,
+    members: null,
+    online: null,
+  };
+}
+
+async function loadGuild(id) {
+  gIcon.textContent = '?';
+  gIcon.style.background = 'linear-gradient(135deg, #6d28d9, #4c1d95)';
+  gName.textContent = 'buscandoâ€¦';
+  gMeta.textContent = 'aguarde';
+  guildPreview.classList.add('show');
+
+  const data = await fetchGuild(id);
+  showSuccess(data);
 }
 
 guildConfirm.addEventListener('click', () => {
   if (!state.guild) return;
-  // reseta estado do bot
   state.linkOpened = false;
   state.attempts = 0;
   resetBotScreen();
   show('bot');
 });
 
-// ═══════════════════════════════════════════
-//   TELA 3 — ADICIONAR BOT
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//   TELA 3 â€” ADICIONAR BOT
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 const botLink = document.getElementById('botLink');
 const botConfirm = document.getElementById('botConfirm');
 const botHint = document.getElementById('botHint');
@@ -782,17 +795,16 @@ const botConfirmLabel = document.getElementById('botConfirmLabel');
 
 function resetBotScreen() {
   botConfirm.disabled = true;
-  botConfirmLabel.textContent = 'já adicionei o bot';
-  botHint.textContent = 'abre o link acima e volta aqui pra liberar o botão.';
+  botConfirmLabel.textContent = 'jÃ¡ adicionei o bot';
+  botHint.textContent = 'abre o link acima e volta aqui pra liberar o botÃ£o.';
   botHint.classList.remove('warn');
 }
 
 botLink.addEventListener('click', () => {
   state.linkOpened = true;
-  botHint.textContent = 'voltando pra cá o botão libera sozinho…';
+  botHint.textContent = 'voltando pra cÃ¡ o botÃ£o libera sozinhoâ€¦';
 });
 
-// detecta retorno à página
 let leftPage = false;
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
@@ -825,9 +837,9 @@ botConfirm.addEventListener('click', () => {
   startLoading();
 });
 
-// ═══════════════════════════════════════════
-//   TELA 4 — LOADING
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//   TELA 4 â€” LOADING
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 const loadFill = document.getElementById('loadFill');
 const loadCount = document.getElementById('loadCount');
 const loadGuildName = document.getElementById('loadGuildName');
@@ -841,7 +853,6 @@ function startLoading() {
   loadCount.textContent = `0 / ${state.qty}`;
   loadSub.innerHTML = `conectando ao servidor <b>${state.guild ? state.guild.name : '#' + state.guildId}</b>`;
 
-  // reinicia animação do check
   const check = screens.loading.querySelector('.check');
   const clone = check.cloneNode(true);
   check.replaceWith(clone);
@@ -856,16 +867,14 @@ function startLoading() {
 
   function step(now) {
     const t = Math.min(1, (now - start) / dur);
-    // ease out cubic
     const e = 1 - Math.pow(1 - t, 3);
     const n = Math.floor(e * total);
     loadFill.style.width = (e * 100).toFixed(1) + '%';
     loadCount.textContent = `${n.toLocaleString('pt-BR')} / ${total.toLocaleString('pt-BR')}`;
 
-    // mensagens
-    if (t > 0.3 && t < 0.35) loadSub.innerHTML = 'analisando permissões…';
-    if (t > 0.55 && t < 0.6) loadSub.innerHTML = 'verificando presença do bot…';
-    if (t > 0.8 && t < 0.85) loadSub.innerHTML = 'finalizando…';
+    if (t > 0.3 && t < 0.35) loadSub.innerHTML = 'analisando permissÃµesâ€¦';
+    if (t > 0.55 && t < 0.6) loadSub.innerHTML = 'verificando presenÃ§a do botâ€¦';
+    if (t > 0.8 && t < 0.85) loadSub.innerHTML = 'finalizandoâ€¦';
 
     if (t < 1) {
       loadRaf = requestAnimationFrame(step);
@@ -877,9 +886,9 @@ function startLoading() {
   loadRaf = requestAnimationFrame(step);
 }
 
-// ═══════════════════════════════════════════
-//   TELA 5 — FALHOU
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//   TELA 5 â€” FALHOU
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 const retryBtn = document.getElementById('retryBtn');
 const failGuildName = document.getElementById('failGuildName');
 const failCount = document.getElementById('failCount');
@@ -889,7 +898,6 @@ function goFailed() {
   failGuildName.textContent = state.guild ? state.guild.name : `#${state.guildId}`;
   failCount.textContent = state.attempts;
 
-  // reinicia animações do X
   const xm = screens.failed.querySelector('.xmark');
   const clone = xm.cloneNode(true);
   xm.replaceWith(clone);
@@ -898,15 +906,14 @@ function goFailed() {
 }
 
 retryBtn.addEventListener('click', () => {
-  // volta pro passo de adicionar bot (loop infinito)
   state.linkOpened = false;
   resetBotScreen();
   show('bot');
 });
 
-// ═══════════════════════════════════════════
-//   PARALLAX SUAVE no card
-// ═══════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//   PARALLAX
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 document.addEventListener('mousemove', (e) => {
   const x = (e.clientX / window.innerWidth - 0.5);
   const y = (e.clientY / window.innerHeight - 0.5);
