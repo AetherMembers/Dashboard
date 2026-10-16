@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aether Membear â€” Resgate</title>
+<title>Aether Membear — Resgate</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -341,7 +341,7 @@
 
 <div class="stage">
 
-  <!-- TELA 1 â€” QUANTIDADE -->
+  <!-- TELA 1 — QUANTIDADE -->
   <div class="screen active" id="s-qty">
     <div class="card">
       <div class="brand">
@@ -351,8 +351,8 @@
         <div class="name">resgate por <b>Aether Membear</b></div>
       </div>
 
-      <h1>Quantos membros<br>vocÃª quer <span class="accent">resgatar</span>?</h1>
-      <p class="sub">escolha a quantidade. o processo Ã© automÃ¡tico.</p>
+      <h1>Quantos membros<br>você quer <span class="accent">resgatar</span>?</h1>
+      <p class="sub">escolha a quantidade. o processo é automático.</p>
 
       <div class="qty-grid">
         <button class="qty-btn" data-qty="100"><span class="n">100</span><span class="l">membros</span></button>
@@ -363,7 +363,7 @@
     </div>
   </div>
 
-  <!-- TELA 2 â€” ID DO SERVIDOR -->
+  <!-- TELA 2 — ID DO SERVIDOR -->
   <div class="screen" id="s-guild">
     <div class="card">
       <div class="brand">
@@ -374,7 +374,7 @@
       </div>
 
       <h1>ID do seu <span class="accent">servidor</span></h1>
-      <p class="sub">cola o id do servidor pra eu buscar as informaÃ§Ãµes.</p>
+      <p class="sub">cola o id do servidor pra eu buscar as informações.</p>
 
       <div class="field">
         <label>ID do servidor</label>
@@ -387,8 +387,8 @@
       <div class="guild-preview" id="guildPreview">
         <div class="gicon" id="gIcon">?</div>
         <div class="ginfo">
-          <div class="gname" id="gName">â€”</div>
-          <div class="gmeta" id="gMeta">â€”</div>
+          <div class="gname" id="gName">—</div>
+          <div class="gmeta" id="gMeta">—</div>
         </div>
       </div>
 
@@ -402,7 +402,7 @@
     </div>
   </div>
 
-  <!-- TELA 3 â€” ADICIONAR BOT -->
+  <!-- TELA 3 — ADICIONAR BOT -->
   <div class="screen" id="s-bot">
     <div class="card">
       <div class="brand">
@@ -421,7 +421,7 @@
         </div>
         <div class="binfo">
           <div class="bname">Aether Membear</div>
-          <div class="bmeta">precisa de permissÃ£o de administrador</div>
+          <div class="bmeta">precisa de permissão de administrador</div>
         </div>
       </div>
 
@@ -432,14 +432,14 @@
       </a>
 
       <button class="btn btn-primary" id="botConfirm" disabled>
-        <span id="botConfirmLabel">jÃ¡ adicionei o bot</span>
+        <span id="botConfirmLabel">já adicionei o bot</span>
       </button>
 
-      <p class="hint" id="botHint">abre o link acima e volta aqui pra liberar o botÃ£o.</p>
+      <p class="hint" id="botHint">abre o link acima e volta aqui pra liberar o botão.</p>
     </div>
   </div>
 
-  <!-- TELA 4 â€” CARREGANDO -->
+  <!-- TELA 4 — CARREGANDO -->
   <div class="screen" id="s-loading">
     <div class="card">
       <div class="status-wrap">
@@ -448,8 +448,8 @@
           <path class="tick" d="M30 52 L44 66 L72 36" fill="none" stroke="#22c55e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div>
-          <div class="status-title">Resgatando membrosâ€¦</div>
-          <div class="status-sub" id="loadSub">conectando ao servidor <b id="loadGuildName">â€¦</b></div>
+          <div class="status-title">Resgatando membros…</div>
+          <div class="status-sub" id="loadSub">conectando ao servidor <b id="loadGuildName">…</b></div>
         </div>
         <div class="loadbar"><div class="fill" id="loadFill"></div></div>
         <div class="status-sub" id="loadCount" style="font-variant-numeric: tabular-nums;">0 / 0</div>
@@ -457,7 +457,7 @@
     </div>
   </div>
 
-  <!-- TELA 5 â€” FALHOU -->
+  <!-- TELA 5 — FALHOU -->
   <div class="screen" id="s-failed">
     <div class="card">
       <div class="status-wrap">
@@ -468,13 +468,13 @@
         </svg>
         <div>
           <div class="status-title">Falha no resgate</div>
-          <div class="status-sub">o bot <b>nÃ£o foi encontrado</b> no servidor <b id="failGuildName">â€”</b>. adicione o bot e tente novamente.</div>
+          <div class="status-sub">o bot <b>não foi encontrado</b> no servidor <b id="failGuildName">—</b>. adicione o bot e tente novamente.</div>
         </div>
         <button class="btn btn-primary" id="retryBtn" style="margin-top:6px;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
           adicionar bot novamente
         </button>
-        <p class="hint warn">tentativa <b id="failCount">1</b> Â· verifique se o bot estÃ¡ no servidor</p>
+        <p class="hint warn">tentativa <b id="failCount">1</b> · verifique se o bot está no servidor</p>
       </div>
     </div>
   </div>
@@ -482,9 +482,9 @@
 </div>
 
 <script>
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
 //   ESTADO
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
 const state = {
   qty: null,
   guildId: null,
@@ -493,9 +493,9 @@ const state = {
   attempts: 0,
 };
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-//   CANVAS â€” fundo animado
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
+//   CANVAS — fundo animado
+// ═══════════════════════════════════════════
 const canvas = document.getElementById('bg');
 const ctx = canvas.getContext('2d', { alpha: true });
 let W = 0, H = 0, DPR = 1;
@@ -618,9 +618,9 @@ function loop() {
 }
 loop();
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-//   NAVEGAÃ‡ÃƒO
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
+//   NAVEGAÇÃO
+// ═══════════════════════════════════════════
 const screens = {
   qty: document.getElementById('s-qty'),
   guild: document.getElementById('s-guild'),
@@ -634,9 +634,9 @@ function show(name) {
   screens[name].classList.add('active');
 }
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-//   TELA 1 â€” QUANTIDADE
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
+//   TELA 1 — QUANTIDADE
+// ═══════════════════════════════════════════
 document.querySelectorAll('.qty-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.qty-btn').forEach(b => b.classList.remove('picked'));
@@ -646,9 +646,9 @@ document.querySelectorAll('.qty-btn').forEach(btn => {
   });
 });
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-//   TELA 2 â€” ID DO SERVIDOR
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
+//   TELA 2 — ID DO SERVIDOR
+// ═══════════════════════════════════════════
 const guildInput = document.getElementById('guildInput');
 const guildInputWrap = document.getElementById('guildInputWrap');
 const guildConfirm = document.getElementById('guildConfirm');
@@ -689,8 +689,8 @@ function showSuccess(data) {
   const parts = [];
   if (data.members != null) parts.push(`${data.members.toLocaleString('pt-BR')} membros`);
   if (data.online != null) parts.push(`${data.online.toLocaleString('pt-BR')} online`);
-  if (!parts.length) parts.push('informaÃ§Ãµes indisponÃ­veis');
-  gMeta.textContent = parts.join(' Â· ');
+  if (!parts.length) parts.push('informações indisponíveis');
+  gMeta.textContent = parts.join(' · ');
 
   state.guild = data;
   state.guildId = data.id;
@@ -769,7 +769,7 @@ async function fetchGuild(id) {
 async function loadGuild(id) {
   gIcon.textContent = '?';
   gIcon.style.background = 'linear-gradient(135deg, #6d28d9, #4c1d95)';
-  gName.textContent = 'buscandoâ€¦';
+  gName.textContent = 'buscando…';
   gMeta.textContent = 'aguarde';
   guildPreview.classList.add('show');
 
@@ -785,9 +785,9 @@ guildConfirm.addEventListener('click', () => {
   show('bot');
 });
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-//   TELA 3 â€” ADICIONAR BOT
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
+//   TELA 3 — ADICIONAR BOT
+// ═══════════════════════════════════════════
 const botLink = document.getElementById('botLink');
 const botConfirm = document.getElementById('botConfirm');
 const botHint = document.getElementById('botHint');
@@ -795,14 +795,14 @@ const botConfirmLabel = document.getElementById('botConfirmLabel');
 
 function resetBotScreen() {
   botConfirm.disabled = true;
-  botConfirmLabel.textContent = 'jÃ¡ adicionei o bot';
-  botHint.textContent = 'abre o link acima e volta aqui pra liberar o botÃ£o.';
+  botConfirmLabel.textContent = 'já adicionei o bot';
+  botHint.textContent = 'abre o link acima e volta aqui pra liberar o botão.';
   botHint.classList.remove('warn');
 }
 
 botLink.addEventListener('click', () => {
   state.linkOpened = true;
-  botHint.textContent = 'voltando pra cÃ¡ o botÃ£o libera sozinhoâ€¦';
+  botHint.textContent = 'voltando pra cá o botão libera sozinho…';
 });
 
 let leftPage = false;
@@ -837,9 +837,9 @@ botConfirm.addEventListener('click', () => {
   startLoading();
 });
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-//   TELA 4 â€” LOADING
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
+//   TELA 4 — LOADING
+// ═══════════════════════════════════════════
 const loadFill = document.getElementById('loadFill');
 const loadCount = document.getElementById('loadCount');
 const loadGuildName = document.getElementById('loadGuildName');
@@ -872,9 +872,9 @@ function startLoading() {
     loadFill.style.width = (e * 100).toFixed(1) + '%';
     loadCount.textContent = `${n.toLocaleString('pt-BR')} / ${total.toLocaleString('pt-BR')}`;
 
-    if (t > 0.3 && t < 0.35) loadSub.innerHTML = 'analisando permissÃµesâ€¦';
-    if (t > 0.55 && t < 0.6) loadSub.innerHTML = 'verificando presenÃ§a do botâ€¦';
-    if (t > 0.8 && t < 0.85) loadSub.innerHTML = 'finalizandoâ€¦';
+    if (t > 0.3 && t < 0.35) loadSub.innerHTML = 'analisando permissões…';
+    if (t > 0.55 && t < 0.6) loadSub.innerHTML = 'verificando presença do bot…';
+    if (t > 0.8 && t < 0.85) loadSub.innerHTML = 'finalizando…';
 
     if (t < 1) {
       loadRaf = requestAnimationFrame(step);
@@ -886,9 +886,9 @@ function startLoading() {
   loadRaf = requestAnimationFrame(step);
 }
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-//   TELA 5 â€” FALHOU
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
+//   TELA 5 — FALHOU
+// ═══════════════════════════════════════════
 const retryBtn = document.getElementById('retryBtn');
 const failGuildName = document.getElementById('failGuildName');
 const failCount = document.getElementById('failCount');
@@ -911,9 +911,9 @@ retryBtn.addEventListener('click', () => {
   show('bot');
 });
 
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
 //   PARALLAX
-// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══════════════════════════════════════════
 document.addEventListener('mousemove', (e) => {
   const x = (e.clientX / window.innerWidth - 0.5);
   const y = (e.clientY / window.innerHeight - 0.5);
